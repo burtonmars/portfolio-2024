@@ -2,10 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --font-family: 'Montserrat', sans-serif;
+  
+  --color-footer: #D7D9D7;
+  --color-text: #000000;
+  --color-subtext: #3d3d3d;
+  --color-theme-green: #1D402C;
+  --color-theme-grey-green: #8E9F95;
+  --color-theme-beige: #D7BB84;
+  --color-theme-grey: #E9ECEA;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,13 +25,7 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  height: 100%;
 }
 
 @layer utilities {
