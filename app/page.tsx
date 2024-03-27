@@ -11,7 +11,9 @@ export default function Home() {
      <div className="flex w-full justify-end">
       <Header />
      </div>
-     <LandingPage />
+     <div className="h-[80dvh]">
+      <LandingPage />
+     </div>
      <Projects />
      <Skills />
      <Contact />
