@@ -25,8 +25,7 @@ module.exports = {
       },
     ],
   },
-  purge: ['./app/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  content: [],
+  content: ['./app/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
     extend: {},
   },
