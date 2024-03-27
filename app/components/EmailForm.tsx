@@ -2,7 +2,9 @@ import React from 'react';
 
 const EmailForm = () => {
   return (
-    <div>EmailForm</div>
+    <div className='mx-6'>
+      EmailForm
+    </div>
   )
 }
 
