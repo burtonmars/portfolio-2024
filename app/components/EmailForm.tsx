@@ -58,11 +58,11 @@ const EmailForm = () => {
   });
 
   return (
-    <div>
+    <div className='w-full'>
       <form 
         ref={form}
         onSubmit={formik.handleSubmit}
-        className='contact-formflex items-center justify-center rounded-lg w-4/5 max-w-screen-lg'>
+        className='items-center justify-center w-full'>
         <div className='input-container flex-[2_2_0%] text-gray-700 p-20'>
           <h1 className='title text-3xl pb-2 font-bold'>Contact</h1>
           <p className='sub-title text-lg text-gray-500'>send me an email if you want to connect</p>
@@ -103,7 +103,8 @@ const EmailForm = () => {
               </label>
               <textarea className='border-2 border-gray-500 p-2 rounded-md w-full'
                       name="message" 
-                      placeholder='Enter your email body' 
+                      placeholder='Enter your email body'
+                      rows={5}
                       value={formik.values.message}
                       onChange={formik.handleChange} 
                       onBlur={formik.handleBlur}
@@ -111,8 +112,8 @@ const EmailForm = () => {
             </div>
           </div>
           {/* submit-button */}
-          <div className="button-container w-full flex justify-center items-center">
-            <button type='submit' className='send-button text-md' value="Send">Send</button>
+          <div className="w-full flex justify-center items-center">
+            <button type='submit' className='btn btn-primary btn-lg w-2/6 text-md' value="Send">Send</button>
           </div>
         </div>
       </form>

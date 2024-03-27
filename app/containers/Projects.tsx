@@ -4,7 +4,7 @@ import ProjectsCarousel from '../components/ProjectsCarousel';
 
 const Projects = () => {
   return (
-    <div>
+    <div id='projects' className=''>
         <ProjectsCarousel />
     </div>
   );

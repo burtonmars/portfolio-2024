@@ -4,7 +4,7 @@ import ContactCard from '../components/ContactCard';
 
 const Contact = () => {
   return (
-    <div className='flex justify-center w-full'>
+    <div id='contact' className='flex justify-center w-full'>
         <ContactCard />
     </div>
   );

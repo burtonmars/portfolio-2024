@@ -27,7 +27,23 @@ module.exports = {
   },
   content: ['./app/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: '#1D402C',
+        secondary: '#3d3d3d',
+        accent: 'D7BB84',
+        backgroundPrimary: '#ffffff',
+        themeGrey: '#E9ECEA',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+      xxl: '1536px',
+      xxxl: '1920px',
+    },
   },
   plugins: [require('rippleui')],
 }
