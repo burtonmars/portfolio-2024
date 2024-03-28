@@ -1,6 +1,8 @@
 import devacityLanding from '../../public/devacity-screenshot.webp'
 import ambientFocusSnap from '../../public/ambient-focus-snapshot.webp'
 import portfolioSnap from '../../public/portfolio-screen-shot.webp'
+import whatsForDinnerSnap from '../../public/whats-for-dinner-snap.png'
+
 import { StaticImageData } from 'next/image'
 
 export type Project = {
@@ -30,18 +32,28 @@ export const ProjectsList: Project[] = [
     techs: ['React', 'Next.JS'],
     image: ambientFocusSnap,
     description:
-      'An app that allows users to layer ambient sound samples to create soundscapes that transform their atmosphere in a positive way.',
+      'A sound app that allows users to layer ambient sound samples to create soundscapes that transform their atmosphere in a positive way.',
     liveLink: 'https://ambient-focus-chi.vercel.app/',
     codeLink: 'https://github.com/burtonmars/Ambient-Focus',
   },
   {
     id: 2,
     title: 'My Portfolio',
-    techs: ['React', 'Tailwind', 'emailJS'],
+    techs: ['React', 'Next.js', 'Tailwind', 'emailJS'],
     image: portfolioSnap,
     description:
       'My personal portfolio site for highlighting my skills and providing quick access to the live sites and code bases of my most recent projects.',
-    liveLink: '',
+    liveLink: 'https://marshal-portfolio-git-main-burtonmars.vercel.app/',
     codeLink: 'https://github.com/burtonmars/portfolio-site',
+  },
+  {
+    id: 3,
+    title: 'Whats For Dinner',
+    techs: ['React', 'Tailwind', 'DaisyUI', 'Prisma', 'Next.JS', 'PostgreSQL'],
+    image: whatsForDinnerSnap,
+    description:
+      'A menu app that allows users to create, read, update, and delete menu items. The app also allows users to search for menu items by name or key words.',
+    liveLink: 'https://whats-for-dinner-lovat.vercel.app/',
+    codeLink: 'https://github.com/burtonmars/whats-for-dinner',
   },
 ]

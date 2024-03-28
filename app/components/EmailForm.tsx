@@ -34,7 +34,7 @@ const EmailForm = () => {
     },
     validationSchema: Yup.object({
       name: Yup.string()
-        .max(30, "Name must be 30 characters or less")
+        .max(50, "Name must be 50 characters or less")
         .required("Name is required"),
       email: Yup.string()
         .email('Invalid email address')

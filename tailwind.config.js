@@ -31,7 +31,7 @@ module.exports = {
       colors: {
         primary: '#1D402C',
         secondary: '#3d3d3d',
-        accent: 'D7BB84',
+        accent: '#D7BB84',
         backgroundPrimary: '#ffffff',
         themeGrey: '#E9ECEA',
       },

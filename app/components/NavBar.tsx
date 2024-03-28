@@ -8,10 +8,10 @@ import linkedInLogo from '../../public/LI-In-Bug.webp';
 const NavBarFull = () => {
     return (
         <div className='flex justify-between items-center w-full xxl:mr-24 xxxl:mr-48'>
-            <p><Link href="#skills">Skills</Link></p>
-            <p><Link href='#projects'>Projects</Link></p>
-            <p><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></p>
-            <p><Link href="#contact">Contact</Link></p>
+            <p className='text-lg'><Link href="#skills">Skills</Link></p>
+            <p className='text-lg'><Link href='#projects'>Projects</Link></p>
+            <p className='text-lg'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></p>
+            <p className='text-lg'><Link href="#contact">Contact</Link></p>
             <p className='github-icon'>
                 <Link href="https://github.com/burtonmars?tab=repositories" target='_blank' rel="noreferrer">
                     <Image 

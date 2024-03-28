@@ -4,7 +4,7 @@ import ProjectsCarousel from '../components/ProjectsCarousel';
 
 const Projects = () => {
   return (
-    <div id='projects' className=''>
+    <div id='projects' className='flex justify-center items-center w-full h-full py-24'>
         <ProjectsCarousel />
     </div>
   );
