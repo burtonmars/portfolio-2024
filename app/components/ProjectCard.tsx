@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className='card card-image-cover h-full'>
+    <div className='card card-image-cover h-2/5 md:h-full'>
       <Image className='border-4'
         src={project.image}
         alt={project.title}

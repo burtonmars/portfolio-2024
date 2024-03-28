@@ -11,16 +11,16 @@ export default function Home() {
       <div className="flex w-screen justify-end">
         <Header />
       </div>
-      <div className="h-[80dvh] mb-24">
+      <div className="h-fit md:h-[80dvh] mb-24">
         <LandingPage />
       </div>
-      <div className="flex justify-center h-[80dvh] w-screen">
+      <div className="flex justify-center h-fit md:h-[100dvh] w-screen mb-16 md:mb-0">
         <Skills />
       </div>
-      <div className="flex justify-center h-screen w-screen">
+      <div className="flex justify-center h-fit md:h-screen w-screen">
         <Projects />
       </div>
-      <div className="flex justify-center h-[80dvh] w-screen mb-36">
+      <div className="flex justify-center h-fit md:h-[80dvh] w-screen mb-36">
         <Contact />
       </div>
       <Footer />

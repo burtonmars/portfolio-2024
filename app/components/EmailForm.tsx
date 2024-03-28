@@ -63,9 +63,9 @@ const EmailForm = () => {
         ref={form}
         onSubmit={formik.handleSubmit}
         className='items-center justify-center w-full'>
-        <div className='input-container flex-[2_2_0%] text-gray-700 p-20'>
-          <h1 className='title text-3xl pb-2 font-bold'>Contact</h1>
-          <p className='sub-title text-lg text-gray-500'>send me an email if you want to connect</p>
+        <div className='flex-[2_2_0%] text-gray-700 p-20'>
+          <h1 className='text-3xl pb-2 font-bold'>Contact</h1>
+          <p className='text-lg text-gray-500'>send me an email if you want to connect</p>
           <div className='mt-6'>
             {/* name input */}
             <div className='pb-4'>

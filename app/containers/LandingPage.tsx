@@ -6,11 +6,11 @@ import workFromHome from '../../public/S5_Working-from-Home.webp';
 
 const LandingPage = () => {
   return (
-    <div className='flex justify-center items-center h-full'>
-        <div className='h-full w-3/6 flex justify-center items-center'>
+    <div className='flex justify-center items-center h-full '>
+        <div className='h-full w-full md:w-2/6 flex justify-center items-center'>
             <LandingCard />
         </div>
-        <div className='h-full w-3/6 flex justify-center items-center'>
+        <div className='hidden md:flex h-full w-2/6 justify-center items-center'>
             <Image 
                 src={workFromHome}
                 priority={true}
