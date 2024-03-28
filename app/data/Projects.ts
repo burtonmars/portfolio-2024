@@ -39,7 +39,7 @@ export const ProjectsList: Project[] = [
   {
     id: 2,
     title: 'My Portfolio',
-    techs: ['React', 'Next.js', 'Tailwind', 'emailJS'],
+    techs: ['React', 'Next.js', 'Tailwind', 'RippleUI', 'emailJS'],
     image: portfolioSnap,
     description:
       'My personal portfolio site for highlighting my skills and providing quick access to the live sites and code bases of my most recent projects.',
@@ -49,7 +49,7 @@ export const ProjectsList: Project[] = [
   {
     id: 3,
     title: 'Whats For Dinner',
-    techs: ['React', 'Tailwind', 'DaisyUI', 'Prisma', 'Next.JS', 'PostgreSQL'],
+    techs: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Prisma', 'PostgreSQL'],
     image: whatsForDinnerSnap,
     description:
       'A menu app that allows users to create, read, update, and delete menu items. The app also allows users to search for menu items by name or key words.',

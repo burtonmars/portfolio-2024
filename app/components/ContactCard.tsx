@@ -6,10 +6,10 @@ import ContactInfo from './ContactInfo';
 const ContactCard = () => {
   return (
     <div className='flex justify-center w-full lg:w-5/6 xl:w-3/5'>
-        <div className='hidden md:flex items-center flex-3 bg-slate-300'>
+        <div className='hidden md:flex items-center flex-3 bg-accent rounded-l-lg'>
             <ContactInfo />
         </div>
-        <div className='flex w-full justify-center items-center flex-1 bg-slate-200'>
+        <div className='flex w-full justify-center items-center flex-1 bg-themeGrey rounded-r-lg'>
             <EmailForm />
         </div>
     </div>
