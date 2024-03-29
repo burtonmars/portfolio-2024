@@ -8,19 +8,19 @@ import Footer from "./containers/Footer";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between">
-      <div className="flex w-screen justify-end">
+      <div className="flex w-full justify-end">
         <Header />
       </div>
       <div className="h-fit md:h-[80dvh] mb-24">
         <LandingPage />
       </div>
-      <div className="flex justify-center h-fit md:h-[100dvh] w-screen mb-16 md:mb-0">
+      <div className="flex justify-center h-fit md:h-[100dvh] w-full mb-16 md:mb-0">
         <Skills />
       </div>
-      <div className="flex justify-center h-fit md:h-screen w-screen">
+      <div className="flex justify-center h-fit md:h-screen w-full">
         <Projects />
       </div>
-      <div className="flex justify-center h-fit md:h-[80dvh] w-screen mb-36">
+      <div className="flex justify-center h-fit md:h-[80dvh] w-full mb-36">
         <Contact />
       </div>
       <Footer />
