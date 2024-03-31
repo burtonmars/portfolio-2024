@@ -1,7 +1,7 @@
 import devacityLanding from '../../public/devacity-screenshot.webp'
 import ambientFocusSnap from '../../public/ambient-focus-snapshot.webp'
 import portfolioSnap from '../../public/portfolio-screen-shot.webp'
-import whatsForDinnerSnap from '../../public/ambient-focus-snapshot.webp'
+import whatsForDinnerSnap from '../../public/whats-for-dinner-snap.webp'
 
 import { StaticImageData } from 'next/image'
 
