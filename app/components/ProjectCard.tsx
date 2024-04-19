@@ -10,20 +10,23 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className='card card-image-cover h-2/5 md:h-full'>
-      <Image className='border-4'
-        src={project.image}
-        alt={project.title}
-      />
-      <div className="card-body flex flex-col justify-center items-center h-5/6">
+    <div className='card h-full md:h-full bg-white shadow-lg rounded-lg overflow-hidden'>
+      <div className='relative w-full' style={{ height: '45%' }}>
+        <Image 
+          className='absolute inset-0 w-full h-full object-cover object-center'
+          src={project.image}
+          alt={project.title}
+        />
+      </div>
+      <div className="card-body flex flex-col justify-center items-center">
         <h2 className='text-lg'>{project.title}</h2>
         <p>{project.description}</p>
-        <div className='flex justify-center items-center h-2/6 py-4 flex-wrap'>
+        <div className='flex justify-center items-center py-4 flex-wrap'>
           {project.techs.map((tech, index) => (
             <span key={index} className='badge bg-accent mx-1'>{tech}</span>
           ))}
         </div>
-        <div className="flex justify-between items-center w-5/6">
+        <div className="flex justify-between items-center w-full p-4">
           <Link 
             className='btn btn-primary'
             href={project.liveLink}
@@ -33,11 +36,12 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
             className='btn btn-secondary'
             href={project.codeLink}
             target="_blank">View Code
-            </Link>
+          </Link>
         </div>
       </div>
     </div>
   )
 }
+
 
 export default ProjectCard
