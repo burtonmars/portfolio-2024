@@ -7,59 +7,48 @@ import { ProjectsList } from '../data/Projects';
 
 const ProjectsCarousel = () => {
   const [index, setIndex] = useState(1);
-  const [prevIndex, setPrevIndex] = useState(0);
-  const [nextIndex, setNextIndex] = useState(2);
-  const [transform, setTransform] = useState(0);
-
   const length = ProjectsList.length;
 
-  const handlePrevious = () => {
-   const newIndex = index - 1;
-   const newPrevIndex = prevIndex - 1;
-   const newNextIndex = nextIndex - 1;
-   setIndex(newIndex < 0 ? length - 1 : newIndex);
-   setPrevIndex(newPrevIndex < 0 ? length - 1 : newPrevIndex);
-   setNextIndex(newNextIndex < 0 ? length - 1 : newNextIndex);
-   setTransform(transform + 100);
+  const calculateTransform = () => {
+    return -(index - 1) * 100 / 3;
   };
-  
+
+  const handleCardClick = (idx: number) => {
+    if (idx !== index) {
+      setIndex(idx);
+    }
+  };
+
+  const handlePrevious = () => {
+    setIndex((prevIndex) => prevIndex === 0 ? length - 1 : prevIndex - 1);
+  };
+
   const handleNext = () => {
-    const newIndex = index + 1;
-    const newPrevIndex = prevIndex + 1;
-    const newNextIndex = nextIndex + 1;
-    setIndex(newIndex >= length ? 0 : newIndex);
-    setPrevIndex(newPrevIndex >= length ? 0 : newPrevIndex);
-    setNextIndex(newNextIndex >= length ? 0 : newNextIndex);
-    setTransform(transform - 100);
+    setIndex((prevIndex) => prevIndex === length - 1 ? 0 : prevIndex + 1);
   };
 
   return (
-    <div className="flex flex-col justify-center items-center w-4/5 h-full">
-      <div className="flex w-5/6 h-full justify-between items-center">
-        <div className='flex justify-center items-center h-[90%] relative z-0' onClick={handlePrevious}>
-          <ProjectCard
-            key={ProjectsList[prevIndex].id}
-            project={ProjectsList[prevIndex]}
-          />
-          <div className="absolute rounded-md inset-0 z-10 bg-secondary opacity-45 blur-sm"></div>
-        </div>
-        <div className='flex justify-center items-center h-full duration-500'>
-          <ProjectCard 
-            key={ProjectsList[index].id}
-            project={ProjectsList[index]}
-          />
-        </div>
-        <div className='flex justify-center items-center h-[90%] relative z-0' onClick={handleNext}>
-          <ProjectCard 
-            key={ProjectsList[nextIndex].id}
-            project={ProjectsList[nextIndex]}
-          />
-          <div className="absolute rounded-md inset-0 z-10 bg-secondary opacity-45 blur-sm"></div>
+    <div className="relative w-4/5 h-full flex flex-col items-center">
+      <div className="relative w-5/6 h-full overflow-hidden">
+        <div className="flex h-full transition-transform duration-500 ease-in-out" 
+             style={{ transform: `translateX(${calculateTransform()}%)` }}>
+          {ProjectsList.map((project, idx) => (
+            <div className="flex justify-center items-center h-full min-w-[33.333%]"
+              key={project.id}
+              onClick={() => handleCardClick(idx)}  
+              style={{
+                   transform: idx === index ? 'scale(1)' : 'scale(0.8)',
+                   opacity: idx === index ? 1 : 0.5,
+                   cursor: idx === index ? 'default' : 'pointer'
+                 }}>
+              <ProjectCard project={project} />
+            </div>
+          ))}
         </div>
       </div>
-      <div className='flex justify-between items-center w-1/5 xl:w-1/6 my-4'>
-        <button className='btn btn-accent w-24' onClick={handlePrevious}>Previous</button>
-        <button className='btn btn-accent w-24' onClick={handleNext}>Next</button>
+      <div className="flex justify-between items-center w-1/5 xl:w-1/6 my-4">
+        <button className="btn btn-accent w-24" onClick={handlePrevious}>Previous</button>
+        <button className="btn btn-accent w-24" onClick={handleNext}>Next</button>
       </div>
     </div>
   );

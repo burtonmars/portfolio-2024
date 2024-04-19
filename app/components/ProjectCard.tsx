@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
   return (
-    <div className='card h-full md:h-full bg-white shadow-lg rounded-lg overflow-hidden'>
+    <div className='card h-full w-full md:h-full bg-white shadow-lg rounded-lg overflow-hidden'>
       <div className='relative w-full' style={{ height: '45%' }}>
         <Image 
           className='absolute inset-0 w-full h-full object-cover object-center'

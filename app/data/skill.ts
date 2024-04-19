@@ -11,9 +11,7 @@ export const FESkillsList: string[] = [
   'Angular',
   'Tailwind CSS',
   'Bootstrap',
-  'Git',
   'Bitbucket',
-  'Docker',
   'Jenkins',
   'Playwright',
 ]
@@ -25,4 +23,6 @@ export const BESkillsList: string[] = [
   'Prisma',
   'PostgreSQL',
   'MySQL',
+  'Docker',
+  'Git',
 ]

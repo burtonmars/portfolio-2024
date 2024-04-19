@@ -38,16 +38,6 @@ export const ProjectsList: Project[] = [
   },
   {
     id: 2,
-    title: 'My Portfolio',
-    techs: ['React', 'Next.js', 'Tailwind', 'RippleUI', 'emailJS'],
-    image: portfolioSnap,
-    description:
-      'My personal portfolio site for highlighting my skills and providing quick access to the live sites and code bases of my most recent projects.',
-    liveLink: 'https://marshal-portfolio-git-main-burtonmars.vercel.app/',
-    codeLink: 'https://github.com/burtonmars/portfolio-site',
-  },
-  {
-    id: 3,
     title: 'Whats For Dinner',
     techs: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Prisma', 'PostgreSQL'],
     image: whatsForDinnerSnap,
@@ -55,5 +45,15 @@ export const ProjectsList: Project[] = [
       'A menu app that allows users to create, read, update, and delete menu items. The app also allows users to search for menu items by name or key words.',
     liveLink: 'https://whats-for-dinner-lovat.vercel.app/',
     codeLink: 'https://github.com/burtonmars/whats-for-dinner',
+  },
+  {
+    id: 3,
+    title: 'My Portfolio',
+    techs: ['React', 'Next.js', 'Tailwind', 'RippleUI', 'emailJS'],
+    image: portfolioSnap,
+    description:
+      'My personal portfolio site for highlighting my skills and providing quick access to the live sites and code bases of my most recent projects.',
+    liveLink: 'https://marshal-portfolio-git-main-burtonmars.vercel.app/',
+    codeLink: 'https://github.com/burtonmars/portfolio-site',
   },
 ]
