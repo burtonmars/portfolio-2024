@@ -3,7 +3,7 @@ import ambientFocusSnap from '../../public/ambient-focus-snap.webp'
 import portfolioSnap from '../../public/portfolio-snap.webp'
 import whatsForDinnerSnap from '../../public/whats-for-dinner-snap.webp'
 
-import { StaticImageData } from 'next/image'
+import { StaticImageData } from "next/legacy/image"
 
 export type Project = {
   id: number

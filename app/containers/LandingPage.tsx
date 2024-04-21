@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 import LandingCard from '../components/LandingCard';
 import absurdDesignLightbulbHeadLightmode from '../../public/absurd-lightbulb-head-lightmode.png';
@@ -44,6 +44,7 @@ const LandingPage = () => {
                     objectFit='cover'
                     alt='background blob'
                     className='z-0 opacity-50'
+                    width={450}
                 />
                 <Image 
                     src={imageSrc}
@@ -51,6 +52,7 @@ const LandingPage = () => {
                     height={450}
                     alt={'whimsical drawing of person with lightbulb head'}
                     className='z-10'
+                    width={450}
                 />
             </div>
         </div>

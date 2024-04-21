@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import { GiHamburgerMenu } from "react-icons/gi";
 
@@ -19,6 +19,7 @@ const NavBarFull = () => {
                     <Image 
                         src={gitHubLogo}
                         width={32}
+                        height={32}
                         alt={'github'}>
                     </Image>
                 </Link>
@@ -28,6 +29,7 @@ const NavBarFull = () => {
                     <Image 
                         src={linkedInLogo}
                         width={34}
+                        height={34}
                         alt={'linked in'}>
                     </Image>
                 </Link>
