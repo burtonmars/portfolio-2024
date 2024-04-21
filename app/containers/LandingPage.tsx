@@ -4,22 +4,22 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 
 import LandingCard from '../components/LandingCard';
-import absurdDesignLightbulbHeadBlack from '../../public/absurd-lightbulb-head-black.png';
-import absurdDesignLightbulbHeadWhite from '../../public/absurd-lightbulb-head-white.png';
+import absurdDesignLightbulbHeadLightmode from '../../public/absurd-lightbulb-head-lightmode.png';
+import absurdDesignLightbulbHeadDarkmode from '../../public/absurd-lightbulb-head-darkmode.png';
 import backgroundBlobLightMode from '../../public/blob-haikei-lightmode.svg';
 import backgroundBlobDarkMode from '../../public/blob-haikei-darkmode.svg';
 
 const LandingPage = () => {
-    const [imageSrc, setImageSrc] = useState(absurdDesignLightbulbHeadBlack);
+    const [imageSrc, setImageSrc] = useState(absurdDesignLightbulbHeadLightmode);
     const [backgroundBlob, setBackgroundBlob] = useState(backgroundBlobLightMode);
 
     useEffect(() => {
         const updateImagesForColorScheme = () => {
             if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                setImageSrc(absurdDesignLightbulbHeadWhite);
+                setImageSrc(absurdDesignLightbulbHeadDarkmode);
                 setBackgroundBlob(backgroundBlobDarkMode);
             } else {
-                setImageSrc(absurdDesignLightbulbHeadBlack);
+                setImageSrc(absurdDesignLightbulbHeadLightmode);
                 setBackgroundBlob(backgroundBlobLightMode);
             }
         };

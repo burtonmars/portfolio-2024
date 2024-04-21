@@ -9,6 +9,11 @@
   --color-theme-primary: #D6C000;
   --color-theme-secondary: #FFBB70;
   --color-theme-accent: #FFEC9E;
+  --color-theme-accentDark: #BAB241;
+  --color-theme-background: #FFFBDA;
+  --color-theme-background-dark: #1a1a1a;
+  --color-theme-backgroundSecondary: #FDFDFD;
+  --color-theme-backgroundSecondaryDark: #54533F;
 }
 
 * {

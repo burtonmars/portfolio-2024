@@ -6,7 +6,11 @@ import { useFormik } from 'formik';
 import * as Yup from "yup";
 import emailjs from '@emailjs/browser';
 
-const EmailForm = () => {
+interface EmailFormProps {
+  isInDarkMode: boolean;
+}
+
+const EmailForm = ({ isInDarkMode }: EmailFormProps) => {
   const form = React.useRef<HTMLFormElement | null>(null);
   const emailAddress = React.useRef<HTMLInputElement | null>(null);
 
@@ -15,20 +19,14 @@ const EmailForm = () => {
 
   useEffect(() => {
     const updateFontColor = () => {
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      if (isInDarkMode) {
         setInputFontColor('#f5f5f5');
       } else {
         setInputFontColor('#1a1a1a');
       }
     };
-
     updateFontColor();
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', updateFontColor);
-
-    return () => {
-      window.matchMedia('(prefers-color-scheme: dark)').removeEventListener('change', updateFontColor);
-    };
-  }, []); 
+  }, [isInDarkMode]); 
 
   useEffect(() => {
     let timeoutId: number | NodeJS.Timeout | undefined;
@@ -82,11 +80,11 @@ const EmailForm = () => {
         onSubmit={formik.handleSubmit}
         className='items-center justify-center w-full'>
         <div className='flex-[2_2_0%] p-5 md:p-20'>
-          <h1 className='text-3xl pb-2 font-bold text-gray-700'>Contact</h1>
-          <p className='text-lg text-gray-500'>send me an email if you want to connect</p>
+          <h1 className='text-3xl pb-2 font-bold' style={{ color: inputFontColor }}>Contact</h1>
+          <p className='text-lg ' style={{ color: inputFontColor }}>send me an email if you want to connect</p>
           <div className='mt-6'>
             {/* name input */}
-            <div className='pb-4 text-gray-700'>
+            <div className='pb-4' style={{ color: inputFontColor }}>
               <label className={`block font-bold text-sm pb-2 ${formik.touched.name && formik.errors.name ? "text-red-500" : ""}`} 
                 htmlFor="name">
                 {formik.touched.name && formik.errors.name ? formik.errors.name : "Name"}
@@ -102,7 +100,7 @@ const EmailForm = () => {
                       />
             </div>
             {/* email input */}
-            <div className='pb-4 text-gray-700'>
+            <div className='pb-4 ' style={{ color: inputFontColor }}>
               <label className={`block font-bold text-sm pb-2 ${formik.touched.email && formik.errors.email ? "text-red-500" : ""}`} htmlFor="email">
                 {formik.touched.email && formik.errors.email ? formik.errors.email : "Email"}
               </label>
@@ -116,7 +114,7 @@ const EmailForm = () => {
                       />
             </div>
             {/* message input */}
-            <div className='pb-4 text-gray-700'>
+            <div className='pb-4' style={{ color: inputFontColor }}>
               <label className={`block font-bold text-sm pb-2 ${formik.touched.message && formik.errors.message ? "text-red-500" : ""}`} htmlFor="message">
                 {formik.touched.message && formik.errors.message ? formik.errors.message : "Message"}
               </label>
@@ -132,7 +130,7 @@ const EmailForm = () => {
           </div>
           {/* submit-button */}
           <div className="w-full flex justify-center items-center">
-            <button type='submit' className='btn btn-primary btn-lg w-2/6 text-md' value="Send">Send</button>
+            <button type='submit' className='btn btn-primary btn-lg w-2/6 text-md text-black' value="Send">Send</button>
           </div>
         </div>
       </form>
