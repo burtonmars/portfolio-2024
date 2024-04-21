@@ -7,13 +7,12 @@
 :root {
   --font-family: 'Montserrat', sans-serif;
   
-  --color-footer: #D7D9D7;
+  --color-footer: #E2DD7E;
   --color-text: #000000;
-  --color-subtext: #3d3d3d;
-  --color-theme-green: #1D402C;
-  --color-theme-grey-green: #8E9F95;
-  --color-theme-beige: #D7BB84;
-  --color-theme-grey: #E9ECEA;
+  --color-subtext: #383143;
+  --color-theme-primary: #D6C000;
+  --color-theme-secondary: #FFBB70;
+  --color-theme-accent: #FFEC9E;
 }
 
 * {

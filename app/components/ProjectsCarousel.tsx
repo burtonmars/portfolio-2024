@@ -28,9 +28,9 @@ const ProjectsCarousel = () => {
   };
 
   return (
-    <div className="relative w-4/5 h-full flex flex-col items-center">
-      <div className="relative w-5/6 h-full overflow-hidden">
-        <div className="flex h-full transition-transform duration-500 ease-in-out" 
+    <div className="relative w-full h-[90%] flex flex-col items-center">
+      <div className="relative w-full h-full overflow-hidden">
+        <div className="flex h-full w-full transition-transform duration-500 ease-in-out" 
              style={{ transform: `translateX(${calculateTransform()}%)` }}>
           {ProjectsList.map((project, idx) => (
             <div className="flex justify-center items-center h-full min-w-[33.333%]"
@@ -46,9 +46,9 @@ const ProjectsCarousel = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-between items-center w-1/5 xl:w-1/6 my-4">
-        <button className="btn btn-accent w-24" onClick={handlePrevious}>Previous</button>
-        <button className="btn btn-accent w-24" onClick={handleNext}>Next</button>
+      <div className="flex justify-between items-center w-1/5 xl:w-1/6 my-4 gap-2">
+        <button className="btn btn-ghost w-24" onClick={handlePrevious}>&lt;&lt;</button>
+        <button className="btn btn-ghost w-24" onClick={handleNext}>&gt;&gt;</button>
       </div>
     </div>
   );

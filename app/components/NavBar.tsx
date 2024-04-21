@@ -43,7 +43,7 @@ const NavBarSide = () => {
                 <label className="flex cursor-pointer px-0 h-full w-full" tabIndex={0}>
                     <GiHamburgerMenu size={40}/>
                 </label>
-                <div className="dropdown-menu dropdown-menu-bottom-left">
+                <div className="dropdown-menu dropdown-menu-bottom-right">
                     <p className='text-2xl leading-loose'><Link href="#skills">Skills</Link></p>
                     <p className='text-2xl leading-loose'><Link href='#projects'>Projects</Link></p>
                     <p className='text-2xl leading-loose'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></p>
@@ -59,7 +59,7 @@ const NavBarSide = () => {
 
 const NavBar = () => {
   return (
-    <div className='m-10 xxl:mr-24 xxxl:mr-48 w-2/6'>
+    <div className='m-10 xxl:mr-24 xxxl:mr-48 w-full lg:w-2/6'>
         <div className='hidden md:flex items-center'>
             <NavBarFull />
         </div>

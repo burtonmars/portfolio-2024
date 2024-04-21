@@ -8,18 +8,20 @@ module.exports = {
         themeName: 'light',
         colorScheme: 'light',
         colors: {
-          primary: '#1D402C',
-          secondary: '#3d3d3d',
-          accent: 'D7BB84',
-          backgroundPrimary: '#ffffff',
+          primary: '#D6C000',
+          secondary: '#FFBB70',
+          accent: '#FFEC9E',
+          backgroundPrimary: '#FFFBDA',
+          black: '#000000',
         },
       },
       {
         themeName: 'dark',
         colorScheme: 'dark',
         colors: {
-          primary: '#D7BB84',
-          secondary: '#E9ECEA',
+          primary: '#B6A162',
+          secondary: '#FDFEC9',
+          accent: '#D1CDC7',
           backgroundPrimary: '#1a1a1a',
         },
       },
@@ -29,10 +31,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1D402C',
-        secondary: '#3d3d3d',
-        accent: '#D7BB84',
-        backgroundPrimary: '#ffffff',
+        primary: '#D0824B',
+        secondary: '#FFBB70',
+        accent: '#FFEC9E',
+        backgroundPrimary: '#FFFBDA',
         themeGrey: '#E9ECEA',
       },
     },

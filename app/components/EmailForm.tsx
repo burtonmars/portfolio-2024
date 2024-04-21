@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { useFormik } from 'formik';
 import * as Yup from "yup";
@@ -63,7 +63,7 @@ const EmailForm = () => {
         ref={form}
         onSubmit={formik.handleSubmit}
         className='items-center justify-center w-full'>
-        <div className='flex-[2_2_0%] text-gray-700 p-20'>
+        <div className='flex-[2_2_0%] text-gray-700 p-5 md:p-20'>
           <h1 className='text-3xl pb-2 font-bold'>Contact</h1>
           <p className='text-lg text-gray-500'>send me an email if you want to connect</p>
           <div className='mt-6'>

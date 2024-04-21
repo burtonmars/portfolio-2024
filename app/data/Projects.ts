@@ -38,7 +38,7 @@ export const ProjectsList: Project[] = [
   },
   {
     id: 2,
-    title: 'Whats For Dinner',
+    title: "What's For Dinner",
     techs: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Prisma', 'PostgreSQL'],
     image: whatsForDinnerSnap,
     description:

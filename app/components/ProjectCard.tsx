@@ -21,21 +21,24 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       <div className="card-body flex flex-col justify-center items-center">
         <h2 className='text-lg'>{project.title}</h2>
         <p>{project.description}</p>
-        <div className='flex justify-center items-center py-4 flex-wrap'>
+        <div className='flex justify-center items-center py-4 flex-wrap gap-2'>
           {project.techs.map((tech, index) => (
-            <span key={index} className='badge bg-accent mx-1'>{tech}</span>
+            <span key={index} className='badge badge-outline-primary badge-med mx-1'>{tech}</span>
           ))}
         </div>
-        <div className="flex justify-between items-center w-full p-4">
-          <Link 
-            className='btn btn-primary'
-            href={project.liveLink}
-            target="_blank">Visit Live
-          </Link>
+        <div className="flex justify-between items-center w-full p-4 gap-2">
+          <div hidden={project.title === 'My Portfolio'}>
+            <Link 
+              className='btn btn-primary text-black'
+              href={project.liveLink}
+              >
+                Visit Live
+            </Link>
+          </div>
           <Link
-            className='btn btn-secondary'
-            href={project.codeLink}
-            target="_blank">View Code
+            className='btn btn-outline-secondary text-black'
+            href={project.codeLink}>
+              View Code
           </Link>
         </div>
       </div>
