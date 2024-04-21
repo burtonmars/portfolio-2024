@@ -1,11 +1,6 @@
-export const LangSkillsList: string[] = [
-  'JavaScript',
+export const FESkillsList: string[] = [
   'TypeScript',
   'HTML5/CSS3',
-  'SQL',
-]
-
-export const FESkillsList: string[] = [
   'React',
   'Next.js',
   'Angular',
@@ -17,10 +12,12 @@ export const FESkillsList: string[] = [
 ]
 
 export const BESkillsList: string[] = [
+  'JavaScript',
   'Node.js',
   'RESTful APIs',
   'Express',
   'Prisma',
+  'SQL',
   'PostgreSQL',
   'MySQL',
   'Docker',

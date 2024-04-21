@@ -7,7 +7,7 @@ import ProjectCard from '../components/ProjectCard';
 const Projects = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
-      <h1 className='text-xl md:text-2xl mb-8 md:mb-0'>Projects</h1>
+      <h1 className='text-2xl xl:text-3xl xxl:text-4xl font-bold mb-8 md:mb-0'>Projects</h1>
       <div className="flex lg:hidden flex-col mx-4 h-fit">
         {ProjectsList.map((project, i) => (
           <div className='mb-8' key={i}>
