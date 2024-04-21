@@ -19,8 +19,8 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         />
       </div>
       <div className="card-body flex flex-col justify-center items-center">
-        <h2 className='text-lg'>{project.title}</h2>
-        <p>{project.description}</p>
+        <h2 className='text-lg text-black'>{project.title}</h2>
+        <p className='text-black'>{project.description}</p>
         <div className='flex justify-center items-center py-4 flex-wrap gap-2'>
           {project.techs.map((tech, index) => (
             <span key={index} className='badge badge-outline-primary badge-med mx-1'>{tech}</span>

@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-
 :root {
-  --font-family: 'Montserrat', sans-serif;
-  
   --color-footer: #E2DD7E;
   --color-text: #000000;
   --color-subtext: #383143;

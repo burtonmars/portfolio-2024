@@ -6,7 +6,7 @@ import ContactInfo from './ContactInfo';
 const ContactCard = () => {
   return (
     <div className='flex justify-center h-full w-full lg:w-5/6 xl:w-3/5'>
-        <div className='hidden md:flex items-center flex-3 bg-white md:rounded-l-lg'>
+        <div className='hidden md:flex items-center flex-3 bg-backgroundSecondary md:rounded-l-lg'>
             <ContactInfo />
         </div>
         <div 
