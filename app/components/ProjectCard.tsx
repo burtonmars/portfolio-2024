@@ -23,7 +23,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
         <p className='text-black'>{project.description}</p>
         <div className='flex justify-center items-center py-4 flex-wrap gap-2'>
           {project.techs.map((tech, index) => (
-            <span key={index} className='badge badge-outline-primary badge-med mx-1'>{tech}</span>
+            <span key={index} className='badge badge-outline-secondary badge-med mx-1'>{tech}</span>
           ))}
         </div>
         <div className="flex justify-between items-center w-full p-4 gap-2">
