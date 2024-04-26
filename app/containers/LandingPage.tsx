@@ -33,8 +33,8 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div className='flex justify-center items-center h-full'>
-            <div className='h-full w-full md:w-2/6 flex justify-center items-center'>
+        <div id='landing' className='flex justify-center items-center h-full'>
+            <div className='my-12 md:my-0 h-full w-full md:w-2/6 flex justify-center items-center'>
                 <LandingCard />
             </div>
             <div className='hidden md:flex h-full w-2/6 justify-center items-center relative'>
@@ -44,7 +44,6 @@ const LandingPage = () => {
                     objectFit='cover'
                     alt='background blob'
                     className='z-0 opacity-50'
-                    width={450}
                 />
                 <Image 
                     src={imageSrc}

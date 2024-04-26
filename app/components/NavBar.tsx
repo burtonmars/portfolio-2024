@@ -9,51 +9,53 @@ import linkedInLogo from '../../public/LI-In-Bug.webp';
 
 const NavBarFull = () => {
     return (
-        <div className='flex justify-between items-center w-full'>
-            <p className='text-lg'><Link href="#skills">Skills</Link></p>
-            <p className='text-lg'><Link href='#projects'>Projects</Link></p>
-            <p className='text-lg'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></p>
-            <p className='text-lg'><Link href="#contact">Contact</Link></p>
-            <p className='github-icon'>
-                <Link href="https://github.com/burtonmars?tab=repositories" target='_blank' rel="noreferrer">
-                    <Image 
-                        src={gitHubLogo}
-                        width={32}
-                        height={32}
-                        alt={'github'}>
-                    </Image>
-                </Link>
-            </p>
-            <p className='linkedin-icon'>
-                <Link href="https://www.linkedin.com/in/marshal-burton/" target='_blank' rel="noreferrer">
-                    <Image 
-                        src={linkedInLogo}
-                        width={34}
-                        height={34}
-                        alt={'linked in'}>
-                    </Image>
-                </Link>
-            </p>
-        </div>
+        <nav className='flex justify-between items-center w-full'>
+            <ul className='flex justify-between items-center w-full'>
+                <li className='text-xl'><Link href="#skills">Skills</Link></li>
+                <li className='text-xl'><Link href='#projects'>Projects</Link></li>
+                <li className='text-xl'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></li>
+                <li className='text-xl'><Link href="#contact">Contact</Link></li>
+                <li className='github-icon'>
+                    <Link href="https://github.com/burtonmars?tab=repositories" target='_blank' rel="noreferrer">
+                        <Image 
+                            src={gitHubLogo}
+                            width={32}
+                            height={32}
+                            alt={'github'}>
+                        </Image>
+                    </Link>
+                </li>
+                <li className='linkedin-icon'>
+                    <Link href="https://www.linkedin.com/in/marshal-burton/" target='_blank' rel="noreferrer">
+                        <Image 
+                            src={linkedInLogo}
+                            width={38}
+                            height={32}
+                            alt={'linked in'}>
+                        </Image>
+                    </Link>
+                </li>
+            </ul>
+        </nav>
     )
 }
 
-const NavBarSide = () => {
+const NavBarSmall = () => {
     return (
-        <div className="flex md:hidden">
-            <div className="dropdown">
-                <label className="flex cursor-pointer px-0 h-full w-full" tabIndex={0}>
-                    <GiHamburgerMenu size={40}/>
-                </label>
-                <div className="dropdown-menu dropdown-menu-bottom-right">
-                    <p className='text-2xl leading-loose'><Link href="#skills">Skills</Link></p>
-                    <p className='text-2xl leading-loose'><Link href='#projects'>Projects</Link></p>
-                    <p className='text-2xl leading-loose'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></p>
-                    <p className='text-2xl leading-loose'><Link href="#contact">Contact</Link></p>
-                    <p className='text-2xl leading-loose'><Link href="https://github.com/burtonmars?tab=repositories" target='_blank' rel="noreferrer">Github</Link></p>
-                    <p className='text-2xl leading-loose'><Link href="https://www.linkedin.com/in/marshal-burton/" target='_blank' rel="noreferrer">LinkedIn</Link></p>
-                </div>
-            </div>
+        <div className="flex md:hidden" aria-label="Main navigation">
+            <nav className="dropdown">
+               <button aria-haspopup="true" aria-controls="dropdown-menu" aria-expanded="false" className="flex cursor-pointer px-0 h-full w-full" tabIndex={0}>
+                    <GiHamburgerMenu size={40} aria-label="Open menu"/>
+                </button>
+                <ul className="dropdown-menu dropdown-menu-bottom-right bg-slate-50">
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href="#skills">Skills</Link></li>
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href='#projects'>Projects</Link></li>
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href="Marshal Burton Resume 2024.pdf" target='_blank' rel="noreferrer"><button>Resume</button></Link></li>
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href="#contact">Contact</Link></li>
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href="https://github.com/burtonmars?tab=repositories" target='_blank' rel="noreferrer">Github</Link></li>
+                    <li className='text-2xl ml-2 leading-loose font-bold'><Link href="https://www.linkedin.com/in/marshal-burton/" target='_blank' rel="noreferrer">LinkedIn</Link></li>
+                </ul>
+            </nav>
 		</div>
     );
 }
@@ -66,7 +68,7 @@ const NavBar = () => {
             <NavBarFull />
         </div>
         <div className='flex md:hidden w-2/6 items-center'>
-            <NavBarSide />
+            <NavBarSmall />
         </div>
     </div>
   )

@@ -90,8 +90,9 @@ const EmailForm = ({ isInDarkMode }: EmailFormProps) => {
                 {formik.touched.name && formik.errors.name ? formik.errors.name : "Name"}
               </label>
               <input className='border-2 border-gray-500 p-2 rounded-md w-full text-textPrimary' 
-                      type="text" 
-                      name="name" 
+                      type="text"
+                      name='name'
+                      id="name" 
                       placeholder='Enter your name'
                       value={formik.values.name}
                       onChange={formik.handleChange}
@@ -106,7 +107,8 @@ const EmailForm = ({ isInDarkMode }: EmailFormProps) => {
               </label>
               <input ref={emailAddress} className='border-2 border-gray-500 p-2 rounded-md w-full' 
                       type="email" 
-                      name="email" 
+                      name="email"
+                      id="email" 
                       placeholder='Enter your email address'
                       value={formik.values.email}
                       onChange={formik.handleChange}
@@ -119,7 +121,8 @@ const EmailForm = ({ isInDarkMode }: EmailFormProps) => {
                 {formik.touched.message && formik.errors.message ? formik.errors.message : "Message"}
               </label>
               <textarea className='border-2 border-gray-500 p-2 rounded-md w-full'
-                      name="message" 
+                      id="message"
+                      name="message"
                       placeholder='Enter your email body'
                       rows={5}
                       value={formik.values.message}

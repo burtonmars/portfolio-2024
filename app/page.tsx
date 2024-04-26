@@ -21,11 +21,11 @@ export default function Home() {
         <div className="flex justify-center h-fit md:h-screen w-full">
           <Projects />
         </div>
-        <div className="flex justify-center h-fit md:h-[80dvh] w-full mb-36">
+        <div className="flex justify-center h-fit md:h-[80dvh] w-full mb-24 lg:mb-36">
           <Contact />
         </div>
       </div>
-      <div>
+      <div className="flex justify-center h-full w-full">
         <Footer />
       </div>
     </main>
