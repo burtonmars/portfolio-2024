@@ -3,7 +3,7 @@ import ambientFocusSnap from '../../public/ambient-focus-snap.webp'
 import portfolioSnap from '../../public/portfolio-snap.webp'
 import whatsForDinnerSnap from '../../public/whats-for-dinner-snap.webp'
 
-import { StaticImageData } from "next/legacy/image"
+import { StaticImageData } from 'next/legacy/image'
 
 export type Project = {
   id: number
@@ -38,12 +38,12 @@ export const ProjectsList: Project[] = [
   },
   {
     id: 2,
-    title: "What's For Dinner",
+    title: 'Meal Spark',
     techs: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Prisma', 'PostgreSQL'],
     image: whatsForDinnerSnap,
     description:
       'A menu app that allows users to create, read, update, and delete menu items. The app also allows users to search for menu items by name or key words.',
-    liveLink: 'https://whats-for-dinner-lovat.vercel.app/',
+    liveLink: 'https://meal-spark.vercel.app/',
     codeLink: 'https://github.com/burtonmars/whats-for-dinner',
   },
   {
