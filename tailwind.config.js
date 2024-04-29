@@ -42,6 +42,7 @@ module.exports = {
         accent: '#FFEC9E',
         backgroundPrimary: '#FFFBDA',
         themeGrey: '#E9ECEA',
+        themeBlack: '#1a1a1a',
       },
     },
     screens: {
