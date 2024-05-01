@@ -18,10 +18,10 @@ export default function Home() {
         <div className="flex justify-center h-fit w-full mb-16 md:mb-0">
           <Skills />
         </div>
-        <div className="flex justify-center h-fit md:h-screen w-full">
+        <div className="flex justify-center h-fit w-full">
           <Projects />
         </div>
-        <div className="flex justify-center h-fit md:h-[80dvh] w-full mb-24 lg:mb-36">
+        <div className="flex justify-center w-full mb-24 lg:mb-36">
           <Contact />
         </div>
       </div>
