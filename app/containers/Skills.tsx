@@ -54,9 +54,9 @@ const Skills = () => {
               <h2 className="text-2xl xl:text-3xl xxl:text-4xl">Front End</h2>
             </div>
             <div className='mt-16'>
-              <div className='flex flex-wrap justify-center items-center gap-12 text-lg xl:text-xl xxl:text-2xl'>
+              <div className='flex flex-wrap justify-center gap-12 text-lg xl:text-xl xxl:text-2xl'>
                   {FESkillsList.map((skill, i) => (
-                      <div key={i} className='flex flex-col justify-center items-center gap-4 w-[70px]'>
+                      <div key={i} className='flex flex-col items-center gap-4 w-[60px] xl:w-[70px]'>
                           <Image 
                               src={skill.icon}
                               alt={skill.name}
@@ -64,7 +64,7 @@ const Skills = () => {
                               height={0}
                               className='w-full h-auto'
                           />
-                          <div className='text-md lg:text-lg'>
+                          <div className='text-md lg:text-lg text-center'>
                             {skill.name}
                           </div>
                       </div>
@@ -81,19 +81,19 @@ const Skills = () => {
             <div className='mt-16'>
               <div className='flex flex-wrap justify-center items-center gap-12 text-lg xl:text-xl xxl:text-2xl'>
                 {BESkillsList.map((skill, i) => (
-                    <div key={i} className='flex flex-col justify-center items-center gap-4 w-[70px]'>
-                          <Image
-                              priority={false}
-                              src={skill.icon}
-                              alt={skill.name}
-                              width={0}
-                              height={0}
-                              className='w-full h-auto'
-                          />
-                          <div className='text-md lg:text-lg'>
-                            {skill.name}
-                          </div>
-                      </div>
+                    <div key={i} className='flex flex-col items-center gap-4 w-[60px] xl:w-[70px]'>
+                        <Image
+                            priority={false}
+                            src={skill.icon}
+                            alt={skill.name}
+                            width={0}
+                            height={0}
+                            className='w-full h-auto'
+                        />
+                        <div className='text-md lg:text-lg text-center'>
+                          {skill.name}
+                        </div>
+                    </div>
                 ))}
               </div>
             </div>
@@ -121,7 +121,7 @@ const Skills = () => {
             <div className='mt-16'>
               <div className='flex flex-wrap justify-center items-center gap-12 text-lg xl:text-xl xxl:text-2xl'>
                   {OtherSkillsList.map((skill, i) => (
-                      <div key={i} className='flex flex-col justify-center items-center gap-4 w-[70px]'>
+                      <div key={i} className='flex flex-col justify-center items-center gap-4 w-[60px] xl:w-[70px]'>
                           <Image 
                               src={skill.icon}
                               alt={skill.name}
@@ -129,7 +129,7 @@ const Skills = () => {
                               height={0}
                               className='w-full h-auto'
                           />
-                          <div className='text-md lg:text-lg'>
+                          <div className='text-md lg:text-lg text-center'>
                             {skill.name}
                           </div>
                       </div>
