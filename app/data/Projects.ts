@@ -28,16 +28,6 @@ export const ProjectsList: Project[] = [
   },
   {
     id: 1,
-    title: 'Ambient Focus',
-    techs: ['React', 'Next.JS'],
-    image: ambientFocusSnap,
-    description:
-      'A sound app that allows users to layer ambient sound samples to create soundscapes that transform their atmosphere in a positive way.',
-    liveLink: 'https://ambient-focus-chi.vercel.app/',
-    codeLink: 'https://github.com/burtonmars/Ambient-Focus',
-  },
-  {
-    id: 2,
     title: 'Meal Spark',
     techs: ['React', 'Next.js', 'Tailwind', 'DaisyUI', 'Prisma', 'PostgreSQL'],
     image: whatsForDinnerSnap,
@@ -45,6 +35,16 @@ export const ProjectsList: Project[] = [
       'A menu app that allows users to create, read, update, and delete menu items. The app also allows users to search for menu items by name or key words.',
     liveLink: 'https://meal-spark.vercel.app/',
     codeLink: 'https://github.com/burtonmars/whats-for-dinner',
+  },
+  {
+    id: 2,
+    title: 'Ambient Focus',
+    techs: ['React', 'Next.JS'],
+    image: ambientFocusSnap,
+    description:
+      'A sound app that allows users to layer ambient sound samples to create soundscapes that transform their atmosphere in a positive way.',
+    liveLink: 'https://ambient-focus-chi.vercel.app/',
+    codeLink: 'https://github.com/burtonmars/Ambient-Focus',
   },
   {
     id: 3,
