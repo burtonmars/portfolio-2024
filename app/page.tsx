@@ -7,12 +7,12 @@ import Footer from "./containers/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-between">
+    <main className="w-full flex flex-col items-center justify-between">
       <div className="flex w-full justify-end">
         <Header />
       </div>
-      <div className="gap-32">
-        <div className="h-fit md:h-[80dvh] mb-24">
+      <div className="w-full">
+        <div className="w-full h-fit md:h-[80dvh] mb-24">
           <LandingPage />
         </div>
         <div className="flex justify-center h-fit w-full mb-16 md:mb-0">

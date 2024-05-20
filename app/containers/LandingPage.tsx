@@ -33,7 +33,7 @@ const LandingPage = () => {
     }, []);
 
     return (
-        <div id='landing' className='flex justify-center items-center h-full'>
+        <div id='landing' className='flex justify-center items-center h-full w-full'>
             <div className='my-12 md:my-0 h-full w-full md:w-2/6 flex justify-center items-center'>
                 <LandingCard />
             </div>

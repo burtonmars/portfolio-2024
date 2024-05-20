@@ -38,9 +38,9 @@ const Skills = () => {
   }, []);
 
   return (
-    <div id='skills' className='flex flex-col justify-center items-center h-fit w-full lg:w-3/5 gap-24 mb-24 lg:mb-72'>
-      <h1 className='text-2xl xl:text-3xl xxl:text-4xl mb-4 lg:mb-12 w-full text-center font-bold gap-48'>Technology and Skills</h1>
-      <div className='flex flex-col justify-center items-center w-full h-full gap-72'>
+    <div id='skills' className='flex flex-col justify-center items-center h-fit w-full lg:w-3/5 gap-24 mb-24 lg:mb-72 mx-2 md:mx-0'>
+      <h1 className='text-xl md:text-2xl xl:text-3xl xxl:text-4xl md:mb-4 lg:mb-12 w-full text-center font-bold'>Technology and Skills</h1>
+      <div className='flex flex-col justify-center items-center w-full h-full gap-48 md:gap-72'>
         <div className='flex justify-around items-center gap-8 w-full h-full'>
           <div className='hidden lg:flex w-full h-full justify-center items-center'>
             <Image 
